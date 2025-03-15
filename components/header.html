@@ -1,0 +1,92 @@
+<!-- Header/Navigation Component -->
+<nav class="fixed w-full bg-pearl/90 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="text-2xl font-bold text-navy flex items-center gap-2">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    Elite Mobile Detailing
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/index.html" data-nav="index" class="text-slate hover:text-azure">Home</a>
+                <a href="/pages/services.html" data-nav="services" class="text-slate hover:text-azure">Services</a>
+                <a href="/pages/portfolio.html" data-nav="portfolio" class="text-slate hover:text-azure">Portfolio</a>
+                <a href="/pages/booking.html" data-nav="booking" class="text-slate hover:text-azure">Book Now</a>
+                <a href="/pages/packages.html" data-nav="packages" class="text-slate hover:text-azure">Packages</a>
+                <a href="/pages/contact.html" data-nav="contact" class="text-slate hover:text-azure">Contact</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button 
+                    id="mobile-portfolio-button" 
+                    type="button" 
+                    aria-expanded="false"
+                    aria-controls="mobile-portfolio"
+                    aria-label="Toggle menu"
+                    class="text-slate hover:text-azure p-2 rounded-md">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- menu Open Icon -->
+                    <svg class="h-6 w-6 block" id="menu-open-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- menu Close Icon -->
+                    <svg class="h-6 w-6 hidden" id="menu-close-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-portfolio" class="hidden md:hidden bg-pearl">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="/" data-nav="index" class="block px-3 py-2 text-slate hover:text-azure">Home</a>
+            <a href="/pages/services.html" data-nav="services" class="block px-3 py-2 text-slate hover:text-azure">Services</a>
+            <a href="/pages/portfolio.html" data-nav="portfolio" class="block px-3 py-2 text-slate hover:text-azure">Portfolio</a>
+            <a href="/pages/booking.html" data-nav="booking" class="block px-3 py-2 text-slate hover:text-azure">Book Now</a>
+            <a href="/pages/packages.html" data-nav="packages" class="block px-3 py-2 text-slate hover:text-azure">Packages</a>
+            <a href="/pages/contact.html" data-nav="contact" class="block px-3 py-2 text-slate hover:text-azure">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Add mobile menu script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobilegalleryButton = document.getElementById('mobile-portfolio-button');
+        const mobilegallery = document.getElementById('mobile-portfolio');
+
+        const handleMobilegalleryToggle = () => {
+            const isHidden = mobilegallery.classList.contains('hidden');
+            mobilegallery.classList.toggle('hidden');
+            mobilegalleryButton.setAttribute('aria-expanded', !isHidden);
+        };
+
+        // Add click event listener to toggle button
+        mobilegalleryButton.addEventListener('click', handleMobilegalleryToggle);
+
+        // Add keyboard accessibility
+        mobilegalleryButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleMobilegalleryToggle();
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobilegallery.contains(e.target) && !mobilegalleryButton.contains(e.target)) {
+                mobilegallery.classList.add('hidden');
+                mobilegalleryButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+</script> 

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Mobile Detailing Service</title>
+    <meta name="description" content="Schedule your professional mobile car detailing service. We come to your location in Westchester County. Easy online booking available or call (555) 123-4567.">
+    <meta name="keywords" content="car detailing booking, mobile detailing appointment, auto detailing scheduling, car wash booking, ceramic coating appointment">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Book Your Mobile Detailing Service">
+    <meta property="og:description" content="Schedule your professional mobile car detailing service. We come to your location in Westchester County.">
+    <meta property="og:type" content="business.service">
+    <meta property="og:url" content="https://adamliscia.com/booking">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Premium Mobile Detailing",
+      "image": "https://yoursite.com/images/detailing.jpg",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Westchester County",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "telephone": "(555) 123-4567",
+      "email": "booking@yourdetailingsite.com"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/colors.js"></script>
+    <script>
+        tailwind.config = window.tailwindConfig;
+    </script>
+    <link href="../css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-pearl text-slate">
+    <!-- Header placeholder -->
+    <div id="header"></div>
+
+    <!-- Booking Header -->
+    <header class="pt-24 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-navy mb-4">Book Your Detailing Service</h1>
+            <p class="text-lg text-slate/80 max-w-2xl mx-auto">Professional mobile detailing services that come to you. We bring everything needed to transform your vehicle, including power, water, and professional-grade equipment.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Booking Form Section -->
+                <section class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-2xl font-bold text-navy mb-6">Schedule Your Service</h2>
+                    
+                    <!-- Booking Form -->
+                    <form class="space-y-6">
+                        <!-- Service Selection -->
+                        <div>
+                            <label class="block text-slate mb-2 font-medium">Select Service Package</label>
+                            <select class="w-full p-3 border border-silver rounded-md">
+                                <option>Express Detail - Starting at $89</option>
+                                <option>Full Detail - Starting at $189</option>
+                                <option>Ceramic Coating - Starting at $699</option>
+                            </select>
+                        </div>
+
+                        <!-- Vehicle Information -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Vehicle Make</label>
+                                <input type="text" class="w-full p-3 border border-silver rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Vehicle Model</label>
+                                <input type="text" class="w-full p-3 border border-silver rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Vehicle Year</label>
+                                <input type="number" class="w-full p-3 border border-silver rounded-md">
+                            </div>
+                        </div>
+
+                        <!-- Date and Time -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Preferred Date</label>
+                                <input type="date" class="w-full p-3 border border-silver rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Preferred Time</label>
+                                <select class="w-full p-3 border border-silver rounded-md">
+                                    <option>8:00 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>2:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Name</label>
+                                <input type="text" class="w-full p-3 border border-silver rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Phone</label>
+                                <input type="tel" class="w-full p-3 border border-silver rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Email</label>
+                                <input type="email" class="w-full p-3 border border-silver rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-slate mb-2 font-medium">Service Location</label>
+                                <input type="text" class="w-full p-3 border border-silver rounded-md" placeholder="Address where we'll detail your vehicle">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full bg-azure hover:bg-azure/90 text-white px-8 py-3 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-medium">
+                            Book Now
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Additional Information -->
+                <section class="space-y-8">
+                    <!-- Contact Information -->
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h2 class="text-2xl font-bold text-navy mb-4">Contact Us Directly</h2>
+                        <div class="space-y-4">
+                            <p class="flex items-center gap-3">
+                                <i class="fas fa-phone text-azure"></i>
+                                <span>(555) 123-4567</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <i class="fas fa-envelope text-azure"></i>
+                                <span>booking@yourdetailingsite.com</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service Hours -->
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h2 class="text-2xl font-bold text-navy mb-4">Service Hours</h2>
+                        <div class="space-y-2">
+                            <p class="flex justify-between">
+                                <span class="font-medium">Monday - Saturday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </p>
+                            <p class="flex justify-between">
+                                <span class="font-medium">Sunday</span>
+                                <span>Closed</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service Policies -->
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h2 class="text-2xl font-bold text-navy mb-4">Service Policies</h2>
+                        <div class="space-y-3 text-slate/80">
+                            <p>• 24-hour cancellation notice required</p>
+                            <p>• Service area includes all of Westchester County</p>
+                            <p>• Adequate lighting and space required at service location</p>
+                            <p>• Access to electrical outlet within 100 feet preferred</p>
+                            <p>• Weather-related rescheduling available at no charge</p>
+                            <p>• Additional fees may apply for excessive dirt or pet hair</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile portfolio toggle functionality
+            const mobilegalleryButton = document.getElementById('mobile-portfolio-button');
+            const mobilegallery = document.getElementById('mobile-portfolio');
+
+            if (mobilegalleryButton && mobilegallery) {
+                mobilegalleryButton.addEventListener('click', () => {
+                    mobilegallery.classList.toggle('hidden');
+                });
+
+                // Close mobile portfolio when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!mobilegalleryButton.contains(e.target) && !mobilegallery.contains(e.target)) {
+                        mobilegallery.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Initialize OpenTable widget
+            const loadingElement = document.getElementById('reservation-loading');
+            const widgetContainer = document.getElementById('reservation-widget');
+
+            // Wait for OpenTable script to load
+            const initializeWidget = () => {
+                if (typeof OT !== 'undefined') {
+                    OT.Widget.init({
+                        container: 'reservation-widget',
+                        restaurantId: 'YOUR_RESTAURANT_ID'
+                    });
+                    
+                    // Check for OpenTable widget loading
+                    const observer = new MutationObserver((mutations) => {
+                        if (document.querySelector('.ot-dtp-picker-form')) {
+                            loadingElement.style.display = 'none';
+                            observer.disconnect();
+                        }
+                    });
+
+                    observer.observe(widgetContainer, {
+                        childList: true,
+                        subtree: true
+                    });
+                } else {
+                    setTimeout(initializeWidget, 100);
+                }
+            };
+
+            // Start initialization process
+            initializeWidget();
+
+            // Fallback if widget fails to load
+            setTimeout(() => {
+                if (!document.querySelector('.ot-dtp-picker-form')) {
+                    loadingElement.innerHTML = `
+                        <p class="text-red-600">Unable to load reservation system.</p>
+                        <p class="mt-2">Please call us at (555) 123-4567 to make a reservation.</p>
+                    `;
+                }
+            }, 10000); // 10 second timeout
+        });
+    </script>
+</body>
+</html>
