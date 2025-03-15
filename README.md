@@ -1,64 +1,66 @@
-# Restaurant Website Template
+# Premium Mobile Car Detailing Website
 
-A modern, customizable restaurant website template built with Tailwind CSS. This template is designed to be easily customizable for restaurant clients while maintaining excellent SEO and performance.
+A professional website for a mobile car detailing service in Westchester County. Built with modern web technologies to showcase our premium auto care services while providing an excellent user experience and strong SEO presence.
 
 ## Features
 
+- 🚗 Professional auto detailing service showcase
 - 🎨 Modern, responsive design using Tailwind CSS
 - 🔍 SEO-optimized structure
 - 📱 Mobile-first approach
-- 🍽️ Dynamic portfolio system
-- 📅 Reservation integration (Resy)
-- 📍 Location and maps integration
+- 📸 Dynamic portfolio system for before/after results
+- 📅 Easy online booking system
+- 📍 Service area coverage map
 - 💨 Fast loading times
-- ✏️ Easy content customization
+- ✨ Premium service package displays
 
-## Setup Instructions
+## Technology Stack
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/restaurant-template
-   ```
+- HTML5
+- Tailwind CSS for styling
+- JavaScript for interactivity
+- Font Awesome icons
+- Responsive images
+- Schema.org markup for SEO
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+## Color Scheme
 
-3. Customize content:
-   - Update `data/portfolio.json` with your portfolio items
-   - Replace placeholder images in `images/`
-   - Modify text content in HTML files
-   - Update restaurant information in `js/config.js`
+The website uses a professional color palette designed to convey trust and luxury:
+- Navy: #1C3879 (Primary color - trust and professionalism)
+- Azure: #4B89DC (Accents and calls-to-action)
+- Slate: #2C3E50 (Text and secondary elements)
+- Pearl: #F8F9FA (Backgrounds)
+- Silver: #E5E5E5 (Metallic accents)
+- Success: #2ECC71 (Confirmation messages)
 
-4. Deploy to GitHub Pages:
-   ```bash
-   npm run deploy
-   ```
+## Site Structure
 
-## Customization Guide
+- **Home**: Featured services and testimonials
+- **Services**: Detailed service packages
+  - Express Detail
+  - Full Detail
+  - Ceramic Coating
+- **Portfolio**: Before/after gallery
+- **Booking**: Online appointment scheduling
+- **Contact**: Location and inquiry form
 
-### Colors and Branding
-The template uses a warm, elegant color scheme that can be customized in `tailwind.config.js`:
-- Primary: Warm terra (#7D2E68)
-- Secondary: Gold accent (#D4AF37)
-- Text: Rich charcoal (#2D2D2D)
-- Background: Cream white (#FDFBF7)
+## SEO Implementation
 
-### portfolio Management
-Edit `data/portfolio.json` to update portfolio items. The structure supports:
-- Categories
-- Items with descriptions
-- Prices
-- Dietary indicators
-- Featured items
-
-### SEO Optimization
-Key areas for SEO customization:
-- Title tags
+The website is optimized for search engines with:
+- Strategic keyword placement
 - Meta descriptions
-- Schema markup for restaurants
-- Keywords integration
+- Schema.org markup for auto repair business
+- Open Graph tags
+- Mobile responsiveness
+- Fast loading times
+- Local SEO optimization
+
+## Local Business Information
+
+- **Service Area**: Westchester County, NY
+- **Business Type**: Mobile Auto Detailing
+- **Services**: Professional car detailing, ceramic coating, paint correction
+- **Availability**: Monday-Saturday, 8:00 AM - 6:00 PM
 
 ## License
-MIT License - Feel free to use this template for your projects. 
+© 2024 Premium Mobile Detailing. All rights reserved. 
