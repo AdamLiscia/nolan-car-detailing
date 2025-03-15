@@ -1,7 +1,7 @@
 {
-  "name": "restaurant-template",
+  "name": "car-detailing-website",
   "version": "1.0.0",
-  "description": "Restaurant website template",
+  "description": "Mobile car detailing service website",
   "scripts": {
     "build": "tailwindcss -i ./css/input.css -o ./css/output.css",
     "watch": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
